@@ -1,0 +1,27 @@
+@import '/styles/config';
+
+.hero {
+  height: 90vh;
+  display: grid;
+  place-items: center;
+  background-color: palegoldenrod;
+  color: white;
+}
+
+@include on(mobile) {
+  .hero {
+    background-color: green;
+  }
+}
+
+@include on(xmobile) {
+  .hero {
+    background-color: white;
+  }
+}
+
+// @media (min-width: 600px) {
+//   .hero {
+//     background-color: blue !important;
+//   }
+// }

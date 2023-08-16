@@ -1,0 +1,50 @@
+@import '/styles/config';
+
+.footer-container {
+  width: 100vw;
+  background-color: $footer-color;
+}
+
+.footer-content {
+  margin: auto;
+  padding-top: 5rem;
+  padding-bottom: 5.94rem;
+  display: flex;
+  gap: 16vw;
+}
+
+.footer-description-container {
+  width: 17.3125rem;
+  gap: 1.25rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 7.8vw;
+}
+
+.link-list-1,
+.link-list-2 {
+  gap: 1.25rem;
+  width: max-content;
+}
+
+.footer-links > *,
+.footer-content {
+  width: fit-content;
+}
+
+.footer-socials {
+  gap: 1.25rem;
+}
+
+.socials-list {
+  display: flex;
+  gap: 1.25rem;
+}
+
+#footer-stamp {
+  width: 73.5%;
+  margin: auto;
+  padding-bottom: 5rem;
+}

@@ -1,0 +1,21 @@
+$screen-sm-mobile: 320px;
+$screen-md-mobile: 480px;
+$screen-sm-tablet: 640px;
+$screen-md-tablet: 768px;
+$screen-sm-laptop: 992px;
+$screen-md-laptop: 1280px;
+
+$breakpoints: (
+  'xmobile': $screen-sm-mobile,
+  'mobile': $screen-md-mobile,
+  'xtablet': $screen-sm-tablet,
+  'tablet': $screen-md-tablet,
+  'xlaptop': $screen-sm-laptop,
+  'laptop': $screen-md-laptop,
+);
+
+$primary-color: #ff7424;
+$background-color: #fefefe;
+$titleBar-color: #f5f9fa;
+$footer-color: #fcf1f0;
+$text-color: #242424;
