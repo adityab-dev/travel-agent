@@ -1,0 +1,54 @@
+.blogs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 9.28rem 0rem;
+}
+
+.blogs-heading {
+  display: flex;
+  justify-content: center;
+}
+
+.blogs-list {
+  margin: auto;
+  display: flex;
+  gap: 1.88rem;
+}
+
+@media screen and (max-width: 1275px) {
+  .blogs-container {
+    padding: 5rem 0rem;
+    overflow-y: scroll;
+    gap: 3.12rem;
+  }
+
+  .blogs-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .blogs-list {
+    gap: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .blogs-list {
+    margin: 0rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .blogs-container {
+    padding: 3.13rem 1rem;
+  }
+
+  .blogs-list {
+    gap: 0.62rem;
+    margin: 0;
+  }
+
+  .blogs-heading {
+    display: block;
+  }
+}
