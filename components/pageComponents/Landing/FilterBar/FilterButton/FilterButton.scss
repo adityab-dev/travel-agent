@@ -1,0 +1,19 @@
+.btn-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-container,
+.filter-head {
+  gap: 0.31rem;
+}
+
+.filter-text > .b2 {
+  color: #6a6a6a;
+}
+
+@media screen and (max-width: 840px) {
+  .btn-container {
+    gap: 0.12rem;
+  }
+}

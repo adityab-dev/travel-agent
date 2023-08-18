@@ -7,7 +7,9 @@
 .h1,
 .h2,
 .h3,
-.h4 {
+.h4,
+.feed-label,
+.filter-heading {
   font-family: 'Bau-Bold';
   font-weight: 500;
 }
@@ -19,28 +21,22 @@
 
 .h1 {
   font-size: 3.75rem;
-  font-weight: 500;
   line-height: 5.625rem; /* 150% */
 }
 
 .h2 {
   font-size: 2.5rem;
-  font-weight: 500;
   line-height: 3.75rem; /* 150% */
 }
 
-.h3 {
+.h3,
+.feed-label {
   font-size: 1.6875rem;
-  font-weight: 500;
   line-height: 2.5rem; /* 148.148% */
 }
 
-.h4 {
-  font-size: 1.125rem;
-  font-weight: 500;
-  line-height: 1.6875rem; /* 150% */
-}
-
+.h4,
+.filter-heading,
 .b1 {
   font-size: 1.125rem;
   line-height: 1.6875rem; /* 150% */
@@ -58,12 +54,13 @@
 
 .feed-label {
   color: #fff;
-  font-size: 1.6875rem;
-  font-weight: 500;
-  line-height: 2.5rem; /* 148.148% */
   position: absolute;
   bottom: 1.88rem;
   left: 1.25rem;
+}
+
+.filter-heading {
+  color: $filter-heading-color;
 }
 
 @media screen and (max-width: 1000px) {
@@ -86,6 +83,11 @@
     line-height: 1.875rem; /* 200% */
     bottom: 0.75rem;
     left: 1.5rem;
+  }
+
+  .filter-heading {
+    font-size: 0.9375rem;
+    line-height: 1.6875rem; /* 180% */
   }
 }
 
