@@ -39,7 +39,7 @@
 
 .avatars-list-container,
 #review-header {
-  width: 28.4rem;
+  max-width: 28.4rem;
 }
 
 #review-header {
@@ -85,6 +85,10 @@
     width: 13.75rem;
     height: 2.5rem;
   }
+
+  #review-header {
+    max-width: 90%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -92,7 +96,6 @@
     margin-bottom: 3.12rem;
   }
 
-  #review-header,
   .avatars-list-container {
     width: fit-content;
   }

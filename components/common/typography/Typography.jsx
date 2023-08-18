@@ -34,6 +34,17 @@ const H3 = ({ children, ...extraProps }) => {
   );
 };
 
+const H4 = ({ children, ...extraProps }) => {
+  return (
+    <h4
+      {...extraProps}
+      className='h4 font-primary'
+    >
+      {children}
+    </h4>
+  );
+};
+
 const B1 = ({ children, ...extraProps }) => {
   return (
     <p
@@ -88,4 +99,4 @@ const FeedLabel = ({ children, ...extraProps }) => {
   );
 };
 
-export { H1, H2, H3, B1, B2, Li, Logo, FeedLabel };
+export { H1, H2, H3, H4, B1, B2, Li, Logo, FeedLabel };

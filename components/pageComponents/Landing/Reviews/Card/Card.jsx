@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './Card.scss';
-import { B1, B2 } from 'components/common/typography/Typography';
+import { B1, B2, H4 } from 'components/common/typography/Typography';
 import star from './star.svg';
 import quotes from './quotes.svg';
 
@@ -25,7 +25,7 @@ function Card(props) {
         />
 
         <section className='review-creds'>
-          <B1>{name}</B1>
+          <H4>{name}</H4>
           <B2>{address}</B2>
         </section>
 

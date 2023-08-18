@@ -37,10 +37,6 @@
     width: 13.75rem;
   }
 
-  .blog-content > h3 {
-    width: 80%;
-  }
-
   #blog-btn {
     top: 40%;
     left: 15%;
@@ -52,20 +48,12 @@
   .blog-container {
     width: 11.375rem;
   }
-
-  .blog-content > h3 {
-    width: 65%;
-  }
 }
 
 @media screen and (max-width: 480px) {
   .blog-image-container > img,
   .blog-container {
     width: 9.375rem;
-  }
-
-  .blog-content > h3 {
-    width: 80%;
   }
 
   #blog-btn {
