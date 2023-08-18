@@ -99,4 +99,15 @@ const FeedLabel = ({ children, ...extraProps }) => {
   );
 };
 
-export { H1, H2, H3, H4, B1, B2, Li, Logo, FeedLabel };
+const FilterHeading = ({ children, ...extraProps }) => {
+  return (
+    <h3
+      {...extraProps}
+      className='filter-heading cursor-pointer'
+    >
+      {children}
+    </h3>
+  );
+};
+
+export { H1, H2, H3, H4, B1, B2, Li, Logo, FeedLabel, FilterHeading };
