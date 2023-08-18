@@ -4,6 +4,19 @@
   color: $text-color;
 }
 
+.h1,
+.h2,
+.h3,
+.h4 {
+  font-family: 'Bau-Bold';
+  font-weight: 500;
+}
+
+.b1,
+.b2 {
+  font-family: 'Bau-Regular';
+}
+
 .h1 {
   font-size: 3.75rem;
   font-weight: 500;
@@ -17,10 +30,15 @@
 }
 
 .h3 {
-  font-family: Bau-Bold;
   font-size: 1.6875rem;
   font-weight: 500;
   line-height: 2.5rem; /* 148.148% */
+}
+
+.h4 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.6875rem; /* 150% */
 }
 
 .b1 {
@@ -49,6 +67,11 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .h4 {
+    font-size: 0.9375rem;
+    line-height: 1.375rem; /* 146.667% */
+  }
+
   .b1 {
     font-size: 1rem;
     line-height: 1.45rem;
@@ -111,6 +134,11 @@
   .h3 {
     font-size: 1.125rem;
     line-height: 1.6875rem; /* 150% */
+  }
+
+  .h4 {
+    font-size: 0.75rem;
+    line-height: 1.375rem; /* 183.333% */
   }
 
   .b1 {
