@@ -1,0 +1,77 @@
+.review-card-container {
+  display: flex;
+  width: 16.875rem;
+  padding: 0.625rem;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.review-profile-pic {
+  padding-right: 0.625rem;
+  border-radius: 50%;
+}
+
+.review-creds {
+  padding-right: 1.25rem;
+}
+
+.review-creds > * {
+  font-weight: 500;
+}
+
+#review-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.review-quotes {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+#review-text {
+  width: 15.625rem;
+}
+
+@media screen and (max-width: 1000px) {
+  #review-text {
+    width: 15.625rem;
+    height: 6.875rem;
+  }
+
+  .review-quotes {
+    height: 1.875rem;
+    width: 1.875rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .review-card-container {
+    width: 11.9375rem;
+    padding: 0.625rem;
+    gap: 0.625rem;
+  }
+
+  .review-card-header {
+    height: 3.75rem;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  #review-text {
+    height: fit-content;
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .review-card-container {
+    width: 9.9375rem;
+  }
+
+  #review-text {
+    text-align: center;
+  }
+}
