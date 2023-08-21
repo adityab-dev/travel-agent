@@ -9,7 +9,8 @@
 .h3,
 .h4,
 .feed-label,
-.filter-heading {
+.filter-heading,
+.plan-heading {
   font-family: 'Bau-Bold';
   font-weight: 500;
 }
@@ -19,7 +20,8 @@
   font-family: 'Bau-Regular';
 }
 
-.h1 {
+.h1,
+.plan-heading {
   font-size: 3.75rem;
   line-height: 5.625rem; /* 150% */
 }
@@ -63,9 +65,32 @@
   color: $filter-heading-color;
 }
 
+.plan-heading {
+  color: $plan-heading-color;
+}
+
+@media screen and (max-width: 1600px) {
+  .plan-heading {
+    font-size: 3rem;
+    line-height: 4.5rem; // 150%
+  }
+}
+
+@media screen and (max-width: 1275px) {
+  .plan-heading {
+    font-size: 2.5rem;
+    line-height: 3.75rem; // 150%
+  }
+}
+
 @media screen and (max-width: 1000px) {
-  .h4 {
+  .h4,
+  .feed-label,
+  .filter-heading {
     font-size: 0.9375rem;
+  }
+
+  .h4 {
     line-height: 1.375rem; /* 146.667% */
   }
 
@@ -79,15 +104,18 @@
   }
 
   .feed-label {
-    font-size: 0.9375rem;
     line-height: 1.875rem; /* 200% */
     bottom: 0.75rem;
     left: 1.5rem;
   }
 
   .filter-heading {
-    font-size: 0.9375rem;
     line-height: 1.6875rem; /* 180% */
+  }
+
+  .plan-heading {
+    font-size: 2rem;
+    line-height: 3rem; /* 150% */
   }
 }
 
@@ -128,7 +156,8 @@
     line-height: 2.8125rem; /* 150% */
   }
 
-  .h2 {
+  .h2,
+  .plan-heading {
     font-size: 1.375rem;
     line-height: 2.0625rem; /* 150% */
   }
@@ -138,13 +167,17 @@
     line-height: 1.6875rem; /* 150% */
   }
 
-  .h4 {
+  .h4,
+  .b1,
+  .feed-label {
     font-size: 0.75rem;
+  }
+
+  .h4 {
     line-height: 1.375rem; /* 183.333% */
   }
 
   .b1 {
-    font-size: 0.75rem;
     line-height: 1.125rem; /* 150% */
   }
 
@@ -158,7 +191,6 @@
   }
 
   .feed-label {
-    font-size: 0.75rem;
     left: 1rem;
     bottom: 0.5rem;
   }

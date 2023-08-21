@@ -110,4 +110,27 @@ const FilterHeading = ({ children, ...extraProps }) => {
   );
 };
 
-export { H1, H2, H3, H4, B1, B2, Li, Logo, FeedLabel, FilterHeading };
+const PlanHeading = ({ children, ...extraProps }) => {
+  return (
+    <h1
+      {...extraProps}
+      className='plan-heading'
+    >
+      {children}
+    </h1>
+  );
+};
+
+export {
+  H1,
+  H2,
+  H3,
+  H4,
+  B1,
+  B2,
+  Li,
+  Logo,
+  FeedLabel,
+  FilterHeading,
+  PlanHeading,
+};

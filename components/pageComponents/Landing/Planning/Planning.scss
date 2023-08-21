@@ -1,0 +1,223 @@
+.planning-container {
+  padding: 12.7vw 0 10.5rem 0;
+  position: relative;
+  margin: auto;
+}
+
+.plane-img,
+.plane-img-m,
+.traveller-img,
+.traveller-plane-img {
+  position: absolute;
+}
+
+.plane-img {
+  width: 57.96vw;
+  right: 30.76vw;
+  top: -0.75rem;
+}
+
+.plane-img-m,
+.traveller-plane-img {
+  display: none;
+}
+
+.traveller-img {
+  width: 33vw;
+  top: 7.75rem;
+  right: 12vw;
+}
+
+.planning-body,
+.planning-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.88rem;
+}
+
+.planning-content {
+  width: max(31.5vw, 36.5rem);
+  margin-left: 12.2vw;
+}
+
+.planning-footer,
+.planning-footer-watch {
+  gap: 1.25rem;
+}
+
+#planning-play {
+  padding: 0.75rem;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1600px) {
+  .planning-body > p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .planning-content {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 1275px) {
+  .traveller-img {
+    width: 40vw;
+    right: 8vw;
+    top: 11rem;
+  }
+
+  .plane-img {
+    top: 2.5vw;
+    right: 33.5vw;
+  }
+
+  .planning-container {
+    padding-top: 17.5vw;
+  }
+
+  .planning-content {
+    width: 24.5rem;
+    margin-left: 8vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .planning-content {
+    width: 19.5rem;
+  }
+
+  .planning-body > p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  .traveller-img {
+    top: 8rem;
+  }
+
+  .plane-img {
+    display: none;
+  }
+
+  .plane-img-m {
+    display: block;
+    width: 65vw;
+    top: 2rem;
+    right: 30vw;
+  }
+
+  .planning-container {
+    padding-bottom: 5.65rem;
+  }
+
+  #planning-play {
+    padding: 0.62rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .planning-content,
+  .planning-body,
+  .planning-footer {
+    gap: 2.5vw;
+  }
+
+  .planning-content {
+    width: 92.5vw;
+    margin: auto;
+  }
+
+  .planning-content > h1 {
+    width: 50vw;
+    font-size: 5vw;
+    line-height: 7.5vw;
+  }
+
+  .planning-body {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .planning-body > p {
+    width: 44vw;
+    font-size: max(2vw, 0.8rem);
+    line-height: max(3vw, 1.2rem); //150%
+  }
+
+  .traveller-img {
+    top: 4rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .planning-container {
+    padding-bottom: 0rem;
+  }
+
+  .planning-body > p {
+    width: 40vw;
+  }
+
+  .planning-footer-watch {
+    gap: 0.62rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .planning-container {
+    padding-top: 0;
+  }
+
+  .traveller-img,
+  .plane-img-m {
+    display: none;
+  }
+
+  .traveller-plane-img {
+    display: block;
+  }
+
+  .traveller-plane-img {
+    height: 80vw;
+    top: 0rem;
+    right: 5vw;
+  }
+
+  .planning-content {
+    padding-top: 82.5vw;
+  }
+
+  .planning-body {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .planning-content > h1 {
+    width: 65vw;
+    font-size: 1.75rem;
+    line-height: 2.5rem; //150%
+  }
+
+  .planning-body > p {
+    width: 95%;
+    font-size: 0.9rem;
+    line-height: 1.45rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .planning-content > h1 {
+    font-size: 1.375rem;
+    line-height: 2.0625rem; /* 150% */
+    width: 67.5vw;
+  }
+
+  .planning-body > p {
+    font-size: 0.75rem;
+    line-height: 1.125rem; //150%
+  }
+}
