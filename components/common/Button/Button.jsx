@@ -4,8 +4,8 @@ import './Button.scss';
 const Button = ({ children, type = 'fill', ...extraProps }) => {
   return (
     <button
-      className={'Button ' + `${type} cursor-pointer`}
       {...extraProps}
+      className={`Button ${type} cursor-pointer`}
     >
       <B1>{children}</B1>
     </button>
